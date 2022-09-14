@@ -16,20 +16,28 @@
 		<main>
 			<div class="main-container">
 				<!-- left side of the screen -->
-				<div>
-					<div>
-						<h1>Retro Etch-A-Sketch</h1>
+				<div class="left-container">
+					<div class="title">
+						<h1>
+							Retro <br />
+							Etch-A-Sketch
+						</h1>
 					</div>
-					<div>
-						<input type="color" name="colorPicker" id="picker" />
+					<div id="pickerDiv">
+						<input
+							type="color"
+							name="colorPicker"
+							id="picker"
+							value="#9D1616"
+						/>
 					</div>
-					<div>
+					<div class="btns">
 						<input type="button" value="Black" />
 					</div>
-					<div>
+					<div class="btns">
 						<input type="button" value="Rainbow" />
 					</div>
-					<div>
+					<div class="btns">
 						<input type="button" value="Clear" />
 					</div>
 				</div>
@@ -38,7 +46,7 @@
 					<div>
 						<div id="canvas"></div>
 					</div>
-					<div>
+					<div class="sliderDiv">
 						<input type="range" name="slider" id="slider" />
 					</div>
 				</div>
