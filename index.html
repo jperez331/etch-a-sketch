@@ -9,7 +9,6 @@
 			src="https://kit.fontawesome.com/c1dfb199ba.js"
 			crossorigin="anonymous"
 		></script>
-		<script src="Logic.js"></script>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -24,30 +23,25 @@
 						</h1>
 					</div>
 					<div id="pickerDiv">
-						<input
-							type="color"
-							name="colorPicker"
-							id="picker"
-							value="#9D1616"
-						/>
+						<input type="color" id="colorPicker" value="#9D1616" />
 					</div>
 					<div class="btns">
-						<input type="button" value="Black" />
+						<input type="button" value="Color" id="colorBtn" />
 					</div>
 					<div class="btns">
-						<input type="button" value="Rainbow" />
+						<input type="button" value="Rainbow" id="rainbowBtn" />
 					</div>
 					<div class="btns">
-						<input type="button" value="Clear" />
+						<input type="button" value="Clear" id="clearBtn" />
 					</div>
 				</div>
 				<!-- Right side of the screen -->
 				<div>
 					<div>
-						<div id="canvas"></div>
+						<div id="canvas" class="canvas"></div>
 					</div>
 					<div class="sliderDiv">
-						<input type="range" name="slider" id="slider" />
+						<input id="sizeSlider" type="range" value="16" min="1" max="64" />
 					</div>
 				</div>
 			</div>
@@ -92,5 +86,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="Logic.js"></script>
 	</body>
 </html>
